@@ -4,7 +4,9 @@ import SectionTitle from "@/components/SectionTitle";
 import Testimonial from "@/components/slider/Testimonial";
 import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
-const page = () => {
+import Image from "next/image";
+
+const Page = () => {
   return (
     <ReveloLayout header={1} footer={1}>
       {/* Hero Area Start */}
@@ -21,7 +23,7 @@ const page = () => {
           </h1>
           <div
             className="main-hero-image bgs-cover"
-            style={{ backgroundImage: "url(assets/images/hero/hero.jpg)" }}
+            style={{ backgroundImage: "url(/assets/images/hero/hero.jpg)" }}
           />
         </div>
         <SearchFilter />
@@ -42,7 +44,7 @@ const page = () => {
                   title={"Discover the World's Treasures with Ravelo"}
                   countValue={34500}
                   subtitle1={"One site"}
-                  subtitle2={"most popular experience you’ll remember"}
+                  subtitle2={"most popular experience you'll remember"}
                 />
               </div>
             </div>
@@ -673,7 +675,7 @@ const page = () => {
               >
                 <SectionTitle
                   title={"Discover the World's Class Top Hotel"}
-                  subtitle2="most popular experience you’ll remember"
+                  subtitle2="most popular experience you'll remember"
                 />
               </div>
             </div>
@@ -1093,7 +1095,7 @@ const page = () => {
               >
                 <SectionTitle
                   title={"Read Latest News & Blog"}
-                  subtitle2="most popular experience you’ll remember"
+                  subtitle2="most popular experience you'll remember"
                 />
               </div>
             </div>
@@ -1218,4 +1220,4 @@ const page = () => {
     </ReveloLayout>
   );
 };
-export default page;
+export default Page;
